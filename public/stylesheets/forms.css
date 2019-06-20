@@ -1,0 +1,96 @@
+a{
+    text-decoration: none;
+}
+.button {
+	display: inline-block;
+	font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	padding: .8em 1.4em;
+	padding-right: 4.7em;
+	background: #00796B;
+	border: none;
+	color: white;
+	transition: .2s;
+	font-size: 1.5em;
+	text-align: left;
+}
+.button:before,
+.button:after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	padding-top: inherit;
+	padding-bottom: inherit;
+	width: 2.8em;
+	content: "\00a0";
+	font-family: 'FontAwesome', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	
+	transition: .2s;
+	transform-origin: 50% 60%;
+}
+.button:before {
+	background: fadeout(#000, 90%);;
+}
+.button:hover {
+	background: darken(#00796B, 10%);
+	color: #fff;
+}
+.button:active{
+    background: darken(#00796B, 30%);
+	outline: none;
+	color: #fff;
+}
+.button:focus {
+	background: darken(#00796B, 30%);
+	outline: none;
+	color: #fff;
+}
+
+.button {
+	min-width: 15em;
+}
+
+.arrow {
+	background: #00796B;
+}
+.arrow:hover {
+	background: darken(#00796B, 10%);
+}
+.arrow:active,
+	:focus {
+	background: darken(#00796B, 30%);
+}
+.arrow:after {
+	content: "\F054";
+}
+.arrow:hover:after {
+	-webkit-animation: bounceright .3s alternate ease infinite;
+	animation: bounceright .3s alternate ease infinite;
+}
+
+@-webkit-keyframes bounceright {
+	from { -webkit-transform: translateX(0); }
+	to   { -webkit-transform: translateX(3px); }
+}
+
+
+.rb1, .rb2{
+    padding-top: 20px;
+}
+.button1,.button2{
+    margin: auto;
+}
+.div1{
+    display: block;
+    padding: 50px;
+}
+.div2{
+    display: none;
+}
+.div3{
+    display: none;
+}
